@@ -1,0 +1,8 @@
+A = (input("Enter binary No : "))
+count_0 = A.count('0')
+count_1 = A.count('1')
+
+if count_0 == 1 or count_1 == 1:
+    print("YES")
+else:
+    print("NO")
