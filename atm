@@ -1,0 +1,21 @@
+amount = int(input("Enter the amount to withdraw: "))
+if amount % 100 == 0:
+    count_2000 = amount // 2000
+    amount = amount % 2000
+
+    count_500 = amount // 500
+    amount = amount % 500
+
+    count_200 = amount // 200
+    amount = amount % 200
+
+    count_100 = amount // 100
+    amount = amount % 100
+
+    print("Minimum notes required:")
+    print("2000 x", count_2000)
+    print("500 x", count_500)
+    print(f"200 x {count_200}")
+    print(f"100 x {count_100}")
+else:
+    print("Invalid amount. Please enter a positive amount in multiples of 100.")
