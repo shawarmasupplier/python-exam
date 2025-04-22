@@ -1,0 +1,6 @@
+L = ["pen","ball","eraser","pen","band","pen","Pencil","ball"]
+for elements in set(L):
+    print(f"{elements}: {L.count(elements)}")
+most_occuring = max(set(L), key=L.count)
+print(f"The most occuring item in the list is: ",most_occuring)
+    
