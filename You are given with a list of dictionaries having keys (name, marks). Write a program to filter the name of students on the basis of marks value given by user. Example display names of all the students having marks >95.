@@ -1,0 +1,16 @@
+# Sample list of student dictionaries
+students = [
+    {'name': 'Alice', 'marks': 92},
+    {'name': 'Bob', 'marks': 96},
+    {'name': 'Charlie', 'marks': 89},
+    {'name': 'David', 'marks': 98}
+]
+
+# Get the minimum marks from user
+threshold = int(input("Enter the minimum marks to filter students: "))
+
+# Filter and display students with marks > threshold
+print(f"\nStudents with marks greater than {threshold}:")
+for student in students:
+    if student['marks'] > threshold:
+        print(student['name'])
