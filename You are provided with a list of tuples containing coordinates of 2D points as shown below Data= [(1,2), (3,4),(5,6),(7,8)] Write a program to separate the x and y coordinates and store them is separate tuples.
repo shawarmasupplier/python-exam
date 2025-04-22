@@ -1,0 +1,4 @@
+Data= [(1,2), (3,4),(5,6),(7,8)]
+x_coords, y_coords = zip(*Data)
+print("x coordinates: ",x_coords)
+print("y coordinates: ",y_coords)
