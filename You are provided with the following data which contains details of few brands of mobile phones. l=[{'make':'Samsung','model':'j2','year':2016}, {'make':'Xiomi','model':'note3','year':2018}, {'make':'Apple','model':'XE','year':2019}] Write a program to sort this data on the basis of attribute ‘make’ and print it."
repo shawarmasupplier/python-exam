@@ -1,0 +1,10 @@
+l = [
+    {'make': 'Samsung', 'model': 'j2', 'year': 2016},
+    {'make': 'Xiomi', 'model': 'note3', 'year': 2018},
+    {'make': 'Apple', 'model': 'XE', 'year': 2019}
+]
+
+# Sort by 'year'
+sorted_list = sorted(l, key=lambda x: x['make'])
+
+print(sorted_list)
