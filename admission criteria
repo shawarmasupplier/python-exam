@@ -1,0 +1,14 @@
+tenth_marks = float(input("Enter your percentage in 10th: "))
+twelfth_marks = float(input("Enter your percentage in 12th: "))
+entrance_exam_score = float(input("Enter your marks in the entrance examination: "))
+is_n_player = input("Are you a national level player? (yes/no): ").strip().lower()
+
+
+if tenth_marks < 80 or twelfth_marks < 75:
+    print("Sorry! You are not eligible.")
+elif is_n_player == "yes" and entrance_exam_score + 10 > 80:
+    print("Your admission is confirmed.")
+elif is_n_player == "no" and entrance_exam_score > 80:
+    print("Your admission is confirmed.")
+else:
+    print("Sorry! You are not admitted.")
