@@ -1,0 +1,20 @@
+num = int(input("Enter a positive number: "))
+bit_pos = int(input("Enter the bit position (0-indexed): "))
+print("binary of",num,"is",bin(num),"\n")
+
+mask = 1 << bit_pos
+print(mask, bin(mask))
+
+if (num & mask) != 0:
+    print(f"Bit at position {bit_pos} is ON (1).")
+else:
+    print(f"Bit at position {bit_pos} is OFF (0).")
+
+set_bit = num | mask
+print(f"After setting bit {bit_pos}: {set_bit}",bin(set_bit))
+
+toggled_bit = num ^ mask
+print(f"After toggling bit {bit_pos}: {toggled_bit}",bin(toggled_bit))
+
+num = num & ~mask
+print(f"After clearing bit {bit_pos}: ", bin(num))
